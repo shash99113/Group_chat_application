@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.JFXButton?>-->
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:id="root" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #57606f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
+   <children>
+      <Label layoutX="48.0" layoutY="16.0" text="Chat Room - Play Tech" textFill="#dfe4ea">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="439.0" layoutY="15.0" onMouseReleased="#imgCloseOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-close-window-96.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="398.0" layoutY="15.0" onMouseReleased="#imgMinOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-macos-minimize-90.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="12.0" layoutY="64.0" prefHeight="3.0" prefWidth="470.0" />
+      <TextField fx:id="txtMsg" layoutX="68.0" layoutY="577.0" onAction="#txtMsgOnAction" prefHeight="43.0" prefWidth="313.0" style="-fx-font-size: 20;" />
+      <Button  layoutX="387.0" layoutY="576.0" onAction="#btnSendOnAction" prefHeight="37.0" prefWidth="93.0" style="-fx-background-color: #1B9CFC#1B9CFC;" text="Send" textFill="#cdcccc">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="43.0" fitWidth="37.0" layoutX="20.0" layoutY="580.0" onMouseReleased="#imgImageOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-camera-96.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextArea fx:id="txtArea" layoutX="22.0" layoutY="86.0" prefHeight="473.0" prefWidth="459.0" style="-fx-font-size: 23;" />
+   </children>
+</AnchorPane>
